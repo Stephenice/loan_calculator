@@ -36,10 +36,6 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-/* .main{
-    height: 100vh;
-    width: 100vw;
-} */
 
 a{
     text-decoration: none;
@@ -68,6 +64,45 @@ h2{
     padding: 10px;
     color: var(--light-color);
 }
+
+/* container */
+.container{
+    width: 100vw;
+    height: 70vh;
+    border: 2px solid rgb(181, 216, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cal_container{
+    border: 2px solid red;
+    height: 250px;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+}
+
+.cal_inner_one{
+    width: 70%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.cal_inner_two{
+    border: 2px solid red;
+    height: 100%;
+    width: 30%;
+}
+
+
+
 
 /* footer */
 footer{
