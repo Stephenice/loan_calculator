@@ -74,6 +74,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    color: black;
 }
 
 .cal_container{
@@ -89,19 +90,22 @@ h2{
     display: flex;
 }
 
+/* left size  */
 .cal_inner_one{
     width: 70%;
     height: 100%;
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
+
+/* right size  */
 .cal_inner_two{
     border: 2px solid red;
     height: 100%;
     width: 30%;
 }
-
-
 
 
 /* footer */
