@@ -4,6 +4,7 @@
     --secondary-color: #dd6a1d;
     --secondary-color-hover: #1ee661;
     --light-color: #f4f4f4;
+    --main: rgb(52, 73, 94);
 }
 
 html,
@@ -13,7 +14,7 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
 font-weight: 300;
 text-rendering: optimizeLegibility;
-background-color: #fff;
+/* background-color: #fff; */
 line-height: 145%;
 color:#fff;
 }
@@ -43,7 +44,7 @@ a{
 }
 /* ------header ----------*/
 header,footer{
-    background-color: #0d35b6;
+    background-color: var(--main);
 }
 
 header{
@@ -78,7 +79,7 @@ h2{
 }
 
 .cal_container{
-    border: 2px solid red;
+    border: 2px solid var(--main);
     height: 250px;
     margin: 0 auto;
     width: 60%;
@@ -90,21 +91,36 @@ h2{
     display: flex;
 }
 
+.cal_container,
+.cal_inner_one {
+
+}
+
+
 /* left size  */
 .cal_inner_one{
     width: 70%;
     height: 100%;
-    border: 2px solid red;
-    display: flex;
+    /*border: 2px solid red;
+    */display: flex;
     flex-direction: column;
+    background-color: var(--light-color);
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    color: var(--main);
 }
 
 
 /* right size  */
 .cal_inner_two{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100%;
     width: 30%;
+    background-color: var(--main);
+    color: var(--light-color);
 }
 
 
