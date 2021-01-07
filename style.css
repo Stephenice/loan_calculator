@@ -97,7 +97,7 @@ h2{
 }
 
 .cal_one_top{
-    /* margin-top: 5px; */
+    margin-top: 5px;
 }
 
 /* left size  */
@@ -138,7 +138,7 @@ h2{
 }
 
 .cal{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -161,6 +161,9 @@ p span{
     font-weight: bold;
 }
 
+
+
+
 button{
     width: 120px;
     height: 50px;
@@ -168,7 +171,11 @@ button{
     padding: 5px;
     background: var(--main);
     color: white;
-
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 /* right size  */
