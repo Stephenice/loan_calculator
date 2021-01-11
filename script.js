@@ -30,7 +30,7 @@ function cal(rangeAmount, period, rate){
     rangeValue.innerHTML = `$${range_value}`;
 
     //value position
-    const min = rangeAmount.min ? amount.min : 0;
+    const min = rangeAmount.min ? rangeAmount.min : 0;
     const max = rangeAmount.max ? rangeAmount.max : 100;
     const newVal = Number(((amount - min) * 100) / (max - min));
     rangeValue.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
