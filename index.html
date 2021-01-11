@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Calculator</title>
 
-    <script type="text/javascript" src="script.js" defer> </script>
+    
     <link rel="stylesheet" type="text/css" href="style.css" ></link>
 </head>
 <body>
@@ -24,11 +24,12 @@
                 <div class="cal_two_top cal">
                     <div class="cal_row_one"><p>$100</p></div>
                     <div class="cal_row_two">
-                        <input type="range" class="range" value="" min="" max="" step="">
-                        <div class="rangeValue">34</div>
+                        <input type="range" class="range" value="10000" min="100" max="50000" step="500">
+                        <div id="rangeValue">34</div>
                     </div>
-                    <div class="cal_row_three"><p>$5000</p></div>
+                    <div class="cal_row_three"><p>$50000</p></div>
                 </div>
+
 
                 <div class="cal_three_top cal">
                     <div class="cal_row"><p>Period <span>
@@ -39,7 +40,11 @@
                             <option value="36">36</option>
                           </select>
                     </span></p></div>
-                    <div class="cal_row"><p>Interest rate<span>2.5%</span></p></div>
+
+                    <div class="cal_row">
+                        <p>Interest rate<span class="rate">2.5%</span>
+                        </p></div>
+                    
                 </div>
 
                 <div class="cal_one_top cal">
@@ -48,7 +53,7 @@
             </div>
 
             <div class="cal_inner_two">
-                <div class="cal_two_right"><h3>Monthly Installment: <span class="monthlyPayment">23</span></h3></div>
+                <div class="cal_two_right"><h3>Monthly Installment: <span class="monthlyPayment">0</span></h3></div>
                 <div class="cal_two_apply"></div>
             </div>
 
@@ -59,6 +64,6 @@
     <footer>
         <p>Designed and Developed by <a href="#">Stephen Ijeh</a></p>
     </footer>
-    
+    <script type="text/javascript" src="script.js"> </script>
 </body>
 </html>
