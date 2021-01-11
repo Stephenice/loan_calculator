@@ -1,7 +1,7 @@
 'use strict';
 
 const rangeAmount = document.querySelector('.range');
-const rangeValue = document.getElementById("rangeValue").textContent;
+const rangeValue = document.querySelector(".rangeValue");
 const period = document.getElementById('monthly');
 const interest = document.querySelector('.rate').textContent;;
 const monthlyPayment = document.querySelector('.monthlyPayment');
@@ -25,7 +25,18 @@ function cal(rangeAmount, period, rate){
     const monthly = payment_monthly.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");  
     monthlyPayment.innerHTML= `$${monthly}`;
 
+    //range value
+    const range_value=  amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");  
+    rangeValue.innerHTML = `$${range_value}`;
+
+    //value position
+    const min = rangeAmount.min ? amount.min : 0;
+    const max = rangeAmount.max ? rangeAmount.max : 100;
+    const newVal = Number(((amount - min) * 100) / (max - min));
+    rangeValue.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+
 }
+
 
 function interest_format(){
     const rateFormat = interest.slice(0, -1);
